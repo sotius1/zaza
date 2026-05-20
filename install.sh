@@ -2,7 +2,7 @@
 # Agent ZAZA — one-line installer.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/sotius1/zaza/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/sotius1/zaza/master/install.sh | bash
 #   # or:
 #   bash install.sh
 #

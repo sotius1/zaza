@@ -22,7 +22,7 @@ Agent ZAZA jest **gated** subskrypcją EPIC z [zaza.net.pl/pricing](https://www.
 Jedna komenda — automatycznie tworzy venv w `~/.agent-zaza/`, instaluje zależności i podpina `agent-zaza` do `~/.local/bin`:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/sotius1/zaza/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/sotius1/zaza/master/install.sh | bash
 ```
 
 Wymagania:
