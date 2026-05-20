@@ -86,6 +86,17 @@ if [[ "$HAS_NODE" -eq 1 ]]; then
   (cd "$INSTALL_DIR" && npm install --silent --no-fund --no-audit) || info "npm install pominięty — wymaga --legacy-peer-deps?"
 fi
 
+# ---- Build TUI ----
+if [[ "$HAS_NODE" -eq 1 ]]; then
+  say "Buduję TUI"
+  if [[ -d "$INSTALL_DIR/ui-tui" ]]; then
+    (cd "$INSTALL_DIR/ui-tui" && npm install --silent --no-fund --no-audit && npm run build) || info "TUI build pominięty — sprawdź błędy"
+    info "  ✓ TUI zbudowane"
+  else
+    info "  ⚠ ui-tui/ nie znalezione — TUI niedostępne"
+  fi
+fi
+
 # ---- MCP server pre-warmup ----
 # Provision the four default MCP servers now so the first `agent-zaza` launch
 # doesn't show "stdio — failed" while uvx/npx silently provision in the
