@@ -12,7 +12,7 @@
 set -euo pipefail
 
 REPO_URL="${AGENT_ZAZA_REPO:-https://github.com/sotius1/zaza.git}"
-BRANCH="${AGENT_ZAZA_BRANCH:-main}"
+BRANCH="${AGENT_ZAZA_BRANCH:-master}"
 INSTALL_DIR="${AGENT_ZAZA_HOME:-$HOME/.agent-zaza}"
 BIN_DIR="${AGENT_ZAZA_BIN:-$HOME/.local/bin}"
 
