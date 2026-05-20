@@ -1,0 +1,28 @@
+{
+  "name": "agent-zaza",
+  "version": "0.3.0",
+  "description": "Agent ZAZA — flagowy CLI agent zaza.net.pl. Edycja kodu, eksploracja repo, integracja z przeglądarką, pamięć między sesjami. Wymaga planu EPIC.",
+  "private": true,
+  "scripts": {
+    "postinstall": "echo '✅ Agent ZAZA ready. Run: agent-zaza login'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sotius1/agent-zaza.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sotius1/agent-zaza/issues"
+  },
+  "homepage": "https://www.zaza.net.pl",
+  "dependencies": {
+    "@askjo/camofox-browser": "^1.5.2",
+    "agent-browser": "^0.26.0"
+  },
+  "overrides": {
+    "lodash": "4.18.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "name": "agent-zaza",
+  "display_name": "Agent ZAZA",
+  "description": "AI agent by ZAZA with 90+ tools, persistent memory, and multi-platform support",
+  "icon": "icon.svg",
+  "distribution": {
+    "type": "command",
+    "command": "zaza",
+    "args": ["acp"]
+  }
+}

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Agent ZAZA — entry-point launcher.
+# Forwards all args to cli.py (which handles login/logout/me + EPIC gating).
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+
+PYTHON_BIN="${ZAZA_PYTHON:-python3}"
+
+# If a venv exists at .venv/, prefer it.
+if [[ -x "$ROOT_DIR/.venv/bin/python" ]]; then
+  PYTHON_BIN="$ROOT_DIR/.venv/bin/python"
+elif [[ -x "$ROOT_DIR/venv/bin/python" ]]; then
+  PYTHON_BIN="$ROOT_DIR/venv/bin/python"
+fi
+
+cd "$ROOT_DIR"
+exec "$PYTHON_BIN" cli.py "$@"
