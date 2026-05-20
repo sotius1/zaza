@@ -2,7 +2,7 @@
 # Agent ZAZA — one-line installer.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/sotius1/agent-zaza/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/sotius1/zaza/main/install.sh | bash
 #   # or:
 #   bash install.sh
 #
@@ -11,7 +11,7 @@
 
 set -euo pipefail
 
-REPO_URL="${AGENT_ZAZA_REPO:-https://github.com/sotius1/agent-zaza.git}"
+REPO_URL="${AGENT_ZAZA_REPO:-https://github.com/sotius1/zaza.git}"
 BRANCH="${AGENT_ZAZA_BRANCH:-main}"
 INSTALL_DIR="${AGENT_ZAZA_HOME:-$HOME/.agent-zaza}"
 BIN_DIR="${AGENT_ZAZA_BIN:-$HOME/.local/bin}"
